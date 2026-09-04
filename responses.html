@@ -6,13 +6,16 @@
 <title>ARK Survey Responses</title>
 <style>
   :root {
-    --argon-navy: #0F2438;
+   --argon-navy: #0F2438;
     --argon-navy-light: #1B3A56;
     --argon-sky-top: #8FD3F4;
     --argon-sky-bottom: #FFFFFF;
     --argon-green: #4CAF50;
     --argon-green-dark: #2E7D32;
+    --argon-green-dark: #1B3A56;
     --argon-green-light: #7CC576;
+    --paper:#F6F0E4;
+    --paper-line:#D9CBA8;
   }
   * { box-sizing: border-box; }
   body {
@@ -31,6 +34,10 @@
     box-shadow: 0 10px 30px rgba(15,36,56,0.15);
     overflow: hidden;
     padding-bottom: 16px;
+    background:
+    repeating-linear-gradient(var(--paper) 0px, var(--paper) 31px, var(--paper-line) 32px),
+    var(--paper);
+    background-color: var(--dark);
   }
   .argon-header {
     display: flex;
@@ -38,6 +45,7 @@
     gap: 12px;
     padding: 18px 20px;
     border-bottom: 1px solid rgba(15,36,56,0.12);
+    background-color: var(--paper);
   }
   .argon-badge {
     width: 40px; height: 40px;
