@@ -7,6 +7,9 @@
 --argon-green: #4CAF50;
 --argon-green-dark: #2E7D32;
 --argon-green-light: #7CC576;
+--paper:#F6F0E4;
+--paper-line:#D9CBA8;
+    --dark: #0a122b;
 }
 * { box-sizing: border-box; }
 body {
@@ -26,13 +29,18 @@ background: linear-gradient(180deg, var(--argon-sky-top) 0%, var(--argon-sky-bot
 box-shadow: 0 10px 30px rgba(15,36,56,0.15);
 /* overflow: hidden; */
 min-height: 100vh;
+background:
+repeating-linear-gradient(var(--paper) 0px, var(--paper) 31px, var(--paper-line) 32px),
+var(--paper);
+background-color: var(--dark);
 }
 .argon-header {
 display: flex;
 align-items: center;
-gap: 12px;
+gap: 18px;
 padding: 18px 20px;
 border-bottom: 1px solid rgba(15,36,56,0.12);
+background-color: var(--paper);
 }
 .argon-badge {
 width: 40px; height: 40px;
@@ -68,7 +76,7 @@ white-space: nowrap;
 .argon-feed {
 height: 520px;
 overflow-y: auto;
-padding: 14px 16px;
+padding: 10px 16px;
 display: flex;
 flex-direction: column;
 gap: 10px;
@@ -186,6 +194,8 @@ flex-shrink: 0;
 
 .choose-tab{
     padding: 10px 15px 0;
+    background-color: var(--paper);
+    /* margin-bottom: .8px; */
 }
 
 .choose-tab button{
@@ -212,5 +222,7 @@ flex-shrink: 0;
 }
 
 .ark {
-    width: 30px;
+    /* width: 30px; */
+    height: 100%;
+    border-radius: 5px;
 }
