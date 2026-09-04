@@ -162,12 +162,12 @@ async function handleSend() {
 }
 
 sendBtn.addEventListener('click', handleSend);
-input.addEventListener('keydown', (e) => {
-  if (e.key === 'Enter' && !e.shiftKey) {
-    e.preventDefault();
-    handleSend();
-  }
-});
+// input.addEventListener('keydown', (e) => {
+//   if (e.key === 'Enter' && !e.shiftKey) {
+//     e.preventDefault();
+//     handleSend();
+//   }
+// });
 input.addEventListener('input', () => {
   input.style.height = 'auto';
   input.style.height = Math.min(input.scrollHeight, 110) + 'px';
